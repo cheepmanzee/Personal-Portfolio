@@ -807,10 +807,6 @@ body {
           transform: scale(1.05);
 }
 
-.main .services .services__wrapper .services__main .services__item:hover a > img {
-  padding-left: 5px;
-}
-
 .main .services .services__wrapper .services__main .services__item .services__item-icon {
   width: 60px;
   height: 60px;
@@ -825,6 +821,7 @@ body {
 }
 
 .main .services .services__wrapper .services__main .services__item a {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,7 +838,7 @@ body {
   color: #f8f8f8;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .main .services .services__wrapper .services__main .services__item a img {
@@ -1543,17 +1540,6 @@ body {
   }
   .main .services .services__wrapper .services__main .services__item {
     margin: 20px 0;
-  }
-  .main .services .services__wrapper .services__main .services__item img {
-    -webkit-transition: none;
-    transition: none;
-  }
-  .main .services .services__wrapper .services__main .services__item:hover {
-    -webkit-transform: none;
-            transform: none;
-  }
-  .main .services .services__wrapper .services__main .services__item:hover a > img {
-    margin-left: 10px;
   }
   .main .portfolio .portfolio__wrapper .portfolio__main .portfolio__btns {
     padding: 40px 0 60px;

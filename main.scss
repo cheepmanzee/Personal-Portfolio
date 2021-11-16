@@ -465,9 +465,6 @@ body {
                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
                &:hover {
                   transform: scale(1.05);
-                  a > img {
-                     padding-left: 5px;
-                  }
                }
                .services__item-icon {
                   width: 60px;
@@ -481,11 +478,12 @@ body {
                   letter-spacing: 5%;
                }
                a {
+                  display: block;
                   @include flex(flex,center,center,row);
                   color: $white;
                   text-decoration: none;
                   font-size: 14px;
-                  font-weight: 300;
+                  font-weight: 400;
                   img {
                      transition: 0.3s ease;
                      margin-left: 10px;
@@ -991,15 +989,6 @@ body {
                width: 90%;
                .services__item {
                   margin: 20px 0;
-                  img {
-                     transition: none;
-                  }
-                  &:hover {
-                     transform: none;
-                     a > img {
-                        margin-left: 10px;
-                     }
-                  }
                }
             }
          }
