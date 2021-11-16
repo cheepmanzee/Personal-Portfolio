@@ -1463,6 +1463,10 @@ body {
     padding: 50px 0 0 0;
     text-align: center;
   }
+  .header .hero .hero__wrapper .hero__image img:hover {
+    -webkit-transform-origin: center center !important;
+            transform-origin: center center !important;
+  }
   .header .subnav .subnav__social {
     width: 170px;
   }
