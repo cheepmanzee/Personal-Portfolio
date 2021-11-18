@@ -31,10 +31,19 @@ const $expBtn = document.querySelectorAll('.exp-btn');
 const $servicesBtn = document.querySelectorAll('.services-btn');
 const $portfolioBtn = document.querySelectorAll('.portfolio-btn');
 const $contactBtn = document.querySelectorAll('.contact-btn');
+const $videoBtn = document.querySelector('.video-btn');
+const $videoPopup = document.querySelector('.video-popup')
+const $video = document.querySelector('.video')
 
 $burger.addEventListener('click', () => {
       $menuDrop.classList.add('drop');
       $body.style.overflowY = 'hidden';
+})
+
+$videoBtn.addEventListener('click', () => {
+   $videoPopup.classList.add('popup');
+   $video.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/2QredobIRW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
 })
 
 $menuClose.addEventListener('click', () => {
@@ -199,6 +208,8 @@ for (let x of $popupX) {
       $emailPopup.classList.remove('popup')
       $frontPopup.classList.remove('popup')
       $designPopup.classList.remove('popup')
+      $videoPopup.classList.remove('popup')
+      $video.innerHTML = '';
    })
 }
 
